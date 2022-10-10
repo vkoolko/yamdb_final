@@ -5,10 +5,10 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
+from users.serializers import GetTokenSerializer, SignUpSerializer
+from users.tokens import account_activation_token
 
 from api_yamdb import settings
-from users.serializers import SignUpSerializer, GetTokenSerializer
-from users.tokens import account_activation_token
 
 User = get_user_model()
 

@@ -2,25 +2,19 @@ from django.contrib.auth import get_user_model
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import viewsets, permissions, filters
+from rest_framework import filters, permissions, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from reviews.models import Category, Genre, Title
-from reviews.models import Review
+from reviews.models import Category, Genre, Review, Title
 
 from .filters import TitleFilter
 from .mixins import ListCreateDestroyViewSet
-from .permissions import (IsAdminModeratorOwnerOrReadOnly, IsAdmin)
-from .permissions import (IsAdminOrReadOnly)
-from .serializers import (
-    CommentSerializer,
-    UserSerializer,
-    CategorySerializer,
-    GenreSerializer,
-    TitleSerializer,
-    TitlePostSerializer,
-    ReviewSerializer, UserMeSerializer
-)
+from .permissions import (IsAdmin, IsAdminModeratorOwnerOrReadOnly,
+                          IsAdminOrReadOnly)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ReviewSerializer,
+                          TitlePostSerializer, TitleSerializer,
+                          UserMeSerializer, UserSerializer)
 
 User = get_user_model()
 
