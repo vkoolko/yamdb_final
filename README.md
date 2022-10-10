@@ -80,5 +80,7 @@ docker-compose down
 
 [Светлана](https://github.com/lanazzk) - категории (Categories), жанры (Genres) и произведения (Titles): модели, представления и эндпойнты для них
 
+[Ссылка на проект в облаке](http://178.154.221.209/redoc/)
+
 ### Лицензия [MIT](https://opensource.org/licenses/MIT)
 
