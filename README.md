@@ -1,4 +1,4 @@
-![Yamdb_workflow](https://github.com/vkoolko/yamdb_final/workflows/yamdb_workflow.yml/badge.svg)
+![Yamdb_workflow](https://github.com/vkoolko/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # API к сервису YaMDb
 
