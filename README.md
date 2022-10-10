@@ -24,7 +24,7 @@
 
 Склонировать репозиторий
 
-    git clone git@github.com:vkoolko/infra_sp2.git
+    git clone git@github.com:vkoolko/yamdb_final.git
 
 Запустить docker-compose и собрать контейнеры  командой  
 
